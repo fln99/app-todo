@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    background: #171A21;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+    margin: 20px 0;
+}
+
+    header h1, p {
+        font-family: 'Ubuntu', sans-serif;
+        color: #E26D5A;
+    }
+
+    header h1 {
+        font-size: 40pt;
+    }
+
+main {
+    width: 60%;
+    height: 400px;
+    margin: 0 auto;
+}
+
+    .container {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .input-task input {
+        display: block;
+        margin: 10px auto;
+        outline: none;
+    }
+
+    .input-task input[type="text"] {
+        padding: 10px;
+        background-color: #F4F1DE;
+        width: 300px;
+        border-radius: 20px;
+        text-align: center;
+    }
+
+    .input-task input[type="button"] {
+        width: 100px;
+        background-color: #3D405B;
+        font-weight: bold;
+        font-size: 12pt;
+        border-bottom: 1px solid #E26D5A;
+    }
+
+.msg-initial {
+    text-align: center;
+    margin-top: 150px
+}
+
+    .msg-initial p {
+        color: rgba(214, 195, 201, 0.205);
+        font-size: 20pt;
+        font-style: italic;
+    }
+
+footer {
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    margin: 40px 0;
+}
+
+    footer p {
+        text-align: center;
+        font-size: 10pt;
+    }
