@@ -4,6 +4,10 @@
     border: 0;
 }
 
+.hide {
+    display: none;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
@@ -48,11 +52,12 @@ main {
         width: 300px;
         border-radius: 20px;
         text-align: center;
+        font-size: 14px;
     }
 
     .input-task input[type="button"] {
         width: 100px;
-        background-color: #3D405B;
+        background-color: rgba(61, 64, 91, 0.39);
         font-weight: bold;
         font-size: 12pt;
         border-bottom: 1px solid #E26D5A;
@@ -65,8 +70,42 @@ main {
 
     .msg-initial p {
         color: rgba(214, 195, 201, 0.205);
-        font-size: 20pt;
+        font-size: 15pt;
         font-style: italic;
+    }
+
+.chat-bot {
+    position: fixed;
+    display: block;
+    bottom: 70px;
+    left: 50px;
+    width: 280px;
+    height: 42px;
+}
+
+    .chat-bot p {
+        color: white;
+        margin-left: 100px;
+    }
+
+    .chat-bot span img {
+        position: absolute;
+        width: 35px;
+        padding: 10px;
+        left: 27px;
+        bottom: -1px;
+    }
+
+    .chat-bot span::before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        background: #E26D5A;
+        border-radius: 50%;
+        left: 30px;
+        bottom: 0;
     }
 
 footer {
