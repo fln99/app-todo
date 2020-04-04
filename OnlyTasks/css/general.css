@@ -8,6 +8,7 @@
     display: none;
 }
 
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
@@ -61,6 +62,7 @@ main {
         font-weight: bold;
         font-size: 12pt;
         border-bottom: 1px solid #E26D5A;
+        color: rgba(244, 241, 222, 0.685);
     }
 
 .msg-initial {
@@ -73,6 +75,37 @@ main {
         font-size: 15pt;
         font-style: italic;
     }
+
+.ul-taskList {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 40px;
+    list-style: none;
+}
+
+    .itemList-tarefa {
+        position: relative;
+        width: 100%;
+        color: white;
+        padding: 5px 10px;
+        /*background-color: rgba(64, 224, 208, 0.199);*/
+        border: 1px solid rgba(255, 255, 255, 0.158);
+        border-radius: 20px;
+        margin: 0 0 10px 0;
+        font-style: italic;
+        font-family: 'Ubuntu', sans-serif;
+    }
+
+        .itemList-tarefa a {
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 10px;
+            text-decoration: none;
+            padding: 8px;
+            color: red;
+            font-size: 10px;
+        }
 
 .chat-bot {
     position: fixed;
@@ -90,7 +123,7 @@ main {
 
     .chat-bot span img {
         position: absolute;
-        width: 35px;
+        width: 30px;
         padding: 10px;
         left: 27px;
         bottom: -1px;
@@ -104,7 +137,7 @@ main {
         height: 50px;
         background: #E26D5A;
         border-radius: 50%;
-        left: 30px;
+        left: 27px;
         bottom: 0;
     }
 
