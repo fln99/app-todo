@@ -7,11 +7,17 @@ let arrayTarefas = [];
 
 botaoAdicionarTarefa.addEventListener('click', adicionarTarefa);
 
+listaNaoOrdenada.classList.add('hide');
+
 function controleDaMensagem() {
     if (arrayTarefas.length > 0) {
         mensagemInicial.classList.add('hide');
+        listaNaoOrdenada.classList.remove('hide');
+
     } else {
         mensagemInicial.classList.remove('hide');
+        listaNaoOrdenada.classList.add('hide');
+        
     }
 }
 
@@ -47,7 +53,7 @@ function renderizarListaTarefas() {
 
         let elementoLink = document.createElement('a');
         elementoLink.setAttribute('href', '#');
-        let textoElementoLink = document.createTextNode("Excluir");
+        let textoElementoLink = document.createTextNode("X");
         elementoLink.setAttribute('onclick', 'removerTarefa('+ indiceTarefa +')');
 
         elementoLink.appendChild(textoElementoLink);

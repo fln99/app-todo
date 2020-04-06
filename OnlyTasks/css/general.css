@@ -77,22 +77,34 @@ main {
     }
 
 .ul-taskList {
-    width: 70%;
+    width: 60%;
+    height: 300px;
     margin: 0 auto;
     margin-top: 40px;
     list-style: none;
+    overflow: scroll;
+    padding: 5px;
 }
+
+    .ul-taskList::-webkit-scrollbar {
+        width: 2px;
+    }
+
+    .ul-taskList::-webkit-scrollbar-corner {
+        display: none;
+    }
+
+    .ul-taskList::-webkit-scrollbar-thumb {
+        background-color: #E26D5A;
+    }
 
     .itemList-tarefa {
         position: relative;
-        width: 100%;
         color: white;
-        padding: 5px 10px;
-        /*background-color: rgba(64, 224, 208, 0.199);*/
+        padding: 5px 30px 5px 10px;
         border: 1px solid rgba(255, 255, 255, 0.158);
         border-radius: 20px;
         margin: 0 0 10px 0;
-        font-style: italic;
         font-family: 'Ubuntu', sans-serif;
     }
 
@@ -103,15 +115,15 @@ main {
             right: 10px;
             text-decoration: none;
             padding: 8px;
-            color: red;
-            font-size: 10px;
+            color: #E26D5A;
+            font-size: 12px;
         }
 
 .chat-bot {
     position: fixed;
     display: block;
-    bottom: 70px;
-    left: 50px;
+    bottom: 30px;
+    right: 50px;
     width: 280px;
     height: 42px;
 }
@@ -121,24 +133,19 @@ main {
         margin-left: 100px;
     }
 
-    .chat-bot span img {
-        position: absolute;
-        width: 30px;
-        padding: 10px;
-        left: 27px;
-        bottom: -1px;
-    }
-
-    .chat-bot span::before {
-        content: '';
-        display: block;
-        position: absolute;
-        width: 50px;
-        height: 50px;
+    .chat-bot a {
+        width: 40px;
+        height: 40px;
         background: #E26D5A;
         border-radius: 50%;
-        left: 27px;
-        bottom: 0;
+        position: absolute;
+        bottom: 5px;
+        left: 40px;
+    }
+
+    .chat-bot a img {
+        width: 30px;
+        margin: 5px 0 0 5px;
     }
 
 footer {
