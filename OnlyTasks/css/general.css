@@ -160,3 +160,29 @@ footer {
         text-align: center;
         font-size: 10pt;
     }
+
+@media (max-width: 425px) {
+    main {
+        width: 100%;
+    }
+
+    .input-task input[type="text"] {
+        box-sizing: border-box;
+        width: 290px;
+        padding: 10px 10px;
+    }
+
+    .ul-taskList {
+        width: 90%;
+        height: 200px;
+    }
+
+    .chat-bot {
+        right: 150px;
+        display: none;
+    }
+
+    .chat-bot p {
+        display: none;
+    }
+}
